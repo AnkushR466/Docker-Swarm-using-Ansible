@@ -32,3 +32,5 @@ To check the setup go to the manager node by
 * sudo docker info
 
 # Hence your Setup is done
+
+* For professional practice: Devide the ansible playbook into roles [recommended]
