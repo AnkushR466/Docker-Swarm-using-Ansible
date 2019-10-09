@@ -1,3 +1,5 @@
+- name: importing Docker setup file
+  import_playbook: docker_setup.yml
 - name: Initilize Docker_Swarm Master
   hosts: master
   become: true
