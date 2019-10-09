@@ -14,7 +14,17 @@ Download ansible and configure it accordingly on your workstaion
 do modification according to given ansible.cfg file
 Make ansible inventory file like hosts file given
 
-*[here replace the x.x.x.x with your master instance public ip and y.y.y.y with your slave instance publiv ip]
+*[here replace the x.x.x.x with your master instance public ip and y.y.y.y with your slave instance publiv ip in hosts file]
+
+Step 3:
+Run the ansible playbooks.
+
+>> ansible-playbook docker_swarm.yml
+* This file will initilize docker swarm on the manager node and add worker node for the docker swarm
+
+>> Don't need to run docker_setup.yml
+* This is already imported in docker_swarm.yml file so when we run docker_swarm.yml then docker_setup.yml will automatically run.
+* This file will do the required configuration on the instances like installing docker engine and will launch a container on worker node.
 
 
 To check the setup go to the manager node by 
