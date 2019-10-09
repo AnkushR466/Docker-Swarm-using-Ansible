@@ -16,13 +16,6 @@ Make ansible inventory file like hosts file given
 
 *[here replace the x.x.x.x with your master instance public ip and y.y.y.y with your slave instance publiv ip]
 
-Step 3:
-run the ansible playbooks.
->> ansible-playbook docker_setup.yml
-* This file will install docker engine in both the instances and start a container on worker group nodes
-
->> ansible-playbook docker_swarm.yml
-* This file will initilize docker swarm on the manager node and add worker node for the docker swarm
 
 To check the setup go to the manager node by 
 * ssh -i Docker_M.pem[your key] ubuntu@x.x.x.x[your master ip]
