@@ -26,7 +26,8 @@ Run the ansible playbooks.
 * This is already imported in docker_swarm.yml file so when we run docker_swarm.yml then docker_setup.yml will automatically run.
 * This file will do the required configuration on the instances like installing docker engine and will launch a container on worker node.
 
-
+Step 4:
+Check the setup.
 To check the setup go to the manager node by 
 * ssh -i Docker_M.pem[your key] ubuntu@x.x.x.x[your master ip]
 >> And run->
