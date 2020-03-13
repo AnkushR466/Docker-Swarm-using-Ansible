@@ -57,7 +57,7 @@
 
           - name: Making a docker Container
             docker_container:
-                   name: RedCarpet
+                   name: Mycontainer
                    image: ubuntu
                    state: started
                    ports:
